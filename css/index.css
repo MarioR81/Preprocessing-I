@@ -249,3 +249,12 @@ footer .copyright {
   text-align: center;
   margin-bottom: 3%;
 }
+/*  Media Query 500px */
+@media (max-width: 500px) {
+  .mainContainerBox {
+    border: 1px solid blue;
+  }
+  .navBox {
+    font-size: 5rem;
+  }
+}
