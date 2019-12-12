@@ -137,7 +137,7 @@ body {
   height: 100%;
   font-family: 'Impact';
   line-height: 2;
-  *font-size: 62.5%;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -163,9 +163,9 @@ nav {
   display: flex;
   justify-content: flex-end;
   color: white;
-  font-size: 25px;
+  font-size: 2rem;
 }
-nav a {
+a {
   width: 50%;
   color: white;
   display: flex;
@@ -177,7 +177,7 @@ nav a:hover {
 /*   Hero Box   */
 .heroBox {
   /*border: 1px solid red;*/
-  height: 87vh;
+  height: 80vh;
   padding: 2% 3%;
   display: flex;
 }
@@ -201,29 +201,31 @@ nav a:hover {
 /*   Middle Box   */
 .middleCopy {
   /*border: 1px solid blue;*/
-  height: 41vh;
+  height: 34vh;
   display: flex;
-  color: white;
+  color: black;
   background-color: #959292;
   padding-right: 5%;
 }
-.middleCopy .bioBox {
+.bio {
   width: 55%;
   padding-left: 5%;
   padding-top: 4%;
+  font-size: 1.4rem;
 }
-.middleCopy .skillBox {
-  padding-top: 6%;
+.skillBox {
+  padding-top: 5%;
   padding-left: 0%;
   width: 30%;
+  font-size: 2rem;
   text-align: center;
 }
-.middleCopy .skillBox h2 {
+.skillBox h2 {
   font-size: 2rem;
 }
 /*   Media   */
 .media {
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 5%;
   text-align: center;
 }
@@ -238,6 +240,23 @@ nav a:hover {
 .media .pics .pic1 {
   width: 59%;
 }
+/*  History  */
+.history {
+  width: 90%;
+  height: 47vh;
+  margin-left: 5%;
+  background-color: #959292;
+  text-align: center;
+}
+.history .hisTitle {
+  font-size: 5rem;
+}
+.history .hisList {
+  font-size: 3rem;
+}
+.history .ruler2 {
+  width: 90%;
+}
 /*  Footer  */
 footer {
   width: 100%;
@@ -251,10 +270,77 @@ footer .copyright {
 }
 /*  Media Query 500px */
 @media (max-width: 500px) {
-  .mainContainerBox {
-    border: 1px solid blue;
+  .heroBox {
+    border: 1px solid red;
+    height: 113vh;
+    flex-direction: column;
   }
-  .navBox {
-    font-size: 5rem;
+  .heroBox .heroPic {
+    width: 100%;
+  }
+  .heroBox .heroText {
+    width: 100%;
+    /*border: 1px solid blue;*/
+    text-align: center;
+  }
+  .middleCopy {
+    /*border: 1px solid blue;*/
+    height: 57vh;
+    flex-direction: column;
+    color: black;
+    background-color: #959292;
+    padding-right: 5%;
+  }
+  .middleCopy .ruler {
+    display: none;
+  }
+  .middleCopy .bio {
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 4%;
+    font-size: 1.4rem;
+  }
+  .middleCopy .skillBox {
+    padding-top: 5%;
+    padding-left: 0%;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .middleCopy .skillBox h2 {
+    font-size: 2rem;
+  }
+  .media {
+    font-size: 4rem;
+    padding: 5%;
+    text-align: center;
+  }
+  .media .vid1 {
+    height: 50%;
+    align-content: center;
+  }
+  .media .pics {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .media .pics .pic1 {
+    width: 100%;
+  }
+  .history {
+    width: 90%;
+    height: 50vh;
+    margin-left: 5%;
+    background-color: #959292;
+    text-align: center;
+  }
+  .history .hisTitle {
+    font-size: 4rem;
+  }
+  .history .hisList {
+    font-size: 2rem;
+  }
+  .history .ruler2 {
+    width: 90%;
   }
 }

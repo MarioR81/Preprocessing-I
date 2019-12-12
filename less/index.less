@@ -58,7 +58,7 @@ html, body {
 	height: 100%;
 	font-family: 'Impact';
 	line-height: 2;
-	*font-size: 62.5%;
+	font-size: 62.5%;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Impact';
@@ -76,20 +76,18 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	height: 6vh;
 	background-color: black;
-	
 }
 nav{
 	display: flex;
 	justify-content: flex-end;
 	color: white;
-	font-size: 25px;
+	font-size: 2rem;
 }
-nav a{
-	width: 50%;
-	color: white;
-	display: flex;
-	justify-content: space-around;
-	
+	a{
+		width: 50%;
+		color: white;
+		display: flex;
+		justify-content: space-around;
 }
 nav a:hover{
 	color: red;
@@ -98,7 +96,7 @@ nav a:hover{
 /*   Hero Box   */
 .heroBox{
 	/*border: 1px solid red;*/
-	height: 87vh;
+	height: 80vh;
 	padding: 2% 3%;
 	display: flex;
 	.heroPic{
@@ -122,30 +120,34 @@ nav a:hover{
 /*   Middle Box   */
 .middleCopy{
 	/*border: 1px solid blue;*/
-	height: 41vh;
+	height: 34vh;
 	display: flex;
-	color: white;
+	color: black;
 	background-color: #959292;
 	padding-right: 5%;
-	.bioBox{
+	}
+	.bio{
 		width: 55%;
 		padding-left: 5%;
 		padding-top: 4%;
+		font-size: 1.4rem
 	}
 	.skillBox{
-	padding-top: 6%;
-	padding-left: 0%;
-	width: 30%;
-	text-align: center;
+		padding-top: 5%;
+		padding-left: 0%;
+		width: 30%;
+		font-size: 2rem;
+		text-align: center;
 	h2{
 		font-size: 2rem;
+
 	}
 	}
-}
+
 
 /*   Media   */
 .media{
-	font-size: 2rem;
+	font-size: 4rem;
 	padding: 5%;
 	text-align: center;
 	.vid1{
@@ -161,6 +163,23 @@ nav a:hover{
 	}
 }
 
+/*  History  */
+.history{
+	width: 90%;
+	height: 47vh;
+	margin-left: 5%;
+	background-color: #959292;
+	text-align: center;
+	.hisTitle{
+		font-size: 5rem;
+	}
+	.hisList{
+		font-size: 3rem;
+	}
+	.ruler2{
+		width: 90%;
+	}
+}
 
 /*  Footer  */
 footer{
@@ -176,12 +195,80 @@ footer{
 
 
 /*  Media Query 500px */
+@media (max-width: 500px){
+	.heroBox{
+		border: 1px solid red;
+		height: 113vh;
+		flex-direction: column;
+	.heroPic{
+		width: 100%;
+	}
+	.heroText{
+		width: 100%;
+		/*border: 1px solid blue;*/
+		text-align: center;
+	}
+	}
+	.middleCopy{
+		/*border: 1px solid blue;*/
+		height: 57vh;
+		flex-direction: column;
+		color: black;
+		background-color: #959292;
+		padding-right: 5%;
+		.ruler{
+			display: none;
+		}
+		.bio{
+			width: 100%;
+			padding-left: 5%;
+			padding-top: 4%;
+			font-size: 1.4rem
+		}
+		.skillBox{
+			padding-top: 5%;
+			padding-left: 0%;
+			width: 100%;
+			font-size: 2rem;
+			text-align: center;
+		h2{
+			font-size: 2rem;
+	}
+		}
+		}
+	.media{
+		font-size: 4rem;
+		padding: 5%;
+		text-align: center;
+		.vid1{
+			height: 50%;
+			align-content: center;
+			}
+		.pics{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		.pic1{
+			width: 100%
+				}
+			}
+		}
+		.history{
+			width: 90%;
+			height: 50vh;
+			margin-left: 5%;
+			background-color: #959292;
+			text-align: center;
+			.hisTitle{
+				font-size: 4rem;
+			}
+			.hisList{
+				font-size: 2rem;
+			}
+			.ruler2{
+				width: 90%;
+			}
+		}
 
-@media(max-width: 500px){
-	.mainContainerBox{
-		border: 1px solid blue;
-	}
-	.navBox{
-		font-size: 5rem;
-	}
+
 }
