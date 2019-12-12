@@ -153,6 +153,7 @@ h5 {
   padding: 1% 4%;
   /*border: 1px solid blue;*/
 }
+/* Variables */
 /*  Nav  */
 .navBox {
   width: 100%;
@@ -197,6 +198,21 @@ nav a:hover {
 }
 .heroBox .heroText h3 {
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .heroBox .heroBox {
+    /*border: 1px solid red;*/
+    height: 113vh;
+    flex-direction: column;
+  }
+  .heroBox .heroBox .heroPic {
+    width: 100%;
+  }
+  .heroBox .heroBox .heroText {
+    width: 100%;
+    /*border: 1px solid blue;*/
+    text-align: center;
+  }
 }
 /*   Middle Box   */
 .middleCopy {

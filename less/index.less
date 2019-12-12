@@ -70,6 +70,8 @@ h1, h2, h3, h4, h5 {
 	padding: 1% 4%;
 	/*border: 1px solid blue;*/
 }
+/* Variables */
+@bgAccentColor: #959292;
 
 /*  Nav  */
 .navBox{
@@ -116,6 +118,21 @@ nav a:hover{
 			font-size: 2.5rem;
 		}
 	}
+	@media (max-width: 500px){
+		.heroBox{
+			/*border: 1px solid red;*/
+			height: 113vh;
+			flex-direction: column;
+		.heroPic{
+			width: 100%;
+		}
+		.heroText{
+			width: 100%;
+			/*border: 1px solid blue;*/
+			text-align: center;
+		}
+	}
+	}
 }
 /*   Middle Box   */
 .middleCopy{
@@ -123,7 +140,7 @@ nav a:hover{
 	height: 34vh;
 	display: flex;
 	color: black;
-	background-color: #959292;
+	background-color: @bgAccentColor;
 	padding-right: 5%;
 	.bio{
 		width: 55%;
@@ -166,7 +183,7 @@ nav a:hover{
 	width: 90%;
 	height: 47vh;
 	margin-left: 5%;
-	background-color: #959292;
+	background-color: @bgAccentColor;
 	text-align: center;
 	.hisTitle{
 		font-size: 5rem;
