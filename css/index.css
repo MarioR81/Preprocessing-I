@@ -207,20 +207,20 @@ nav a:hover {
   background-color: #959292;
   padding-right: 5%;
 }
-.bio {
+.middleCopy .bio {
   width: 55%;
   padding-left: 5%;
   padding-top: 4%;
   font-size: 1.4rem;
 }
-.skillBox {
+.middleCopy .skillBox {
   padding-top: 5%;
   padding-left: 0%;
   width: 30%;
   font-size: 2rem;
   text-align: center;
 }
-.skillBox h2 {
+.middleCopy .skillBox h2 {
   font-size: 2rem;
 }
 /*   Media   */
@@ -271,7 +271,7 @@ footer .copyright {
 /*  Media Query 500px */
 @media (max-width: 500px) {
   .heroBox {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 113vh;
     flex-direction: column;
   }
